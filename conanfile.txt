@@ -1,0 +1,22 @@
+[requires]
+nlohmann_json/3.11.2
+prometheus-cpp/1.1.0
+spdlog/1.12.0
+qt/5.15.11
+gstreamer/1.22.3
+
+[generators]
+#cmake
+cmake_find_package
+#cmake_paths
+
+[options]
+qt:with_mysql=False
+qt:with_pq=False
+qt:with_libpng=False
+qt:with_sqlite3=False
+
+[imports]
+lib, *.so* -> ./bin
+lib, *.a -> ./lib
+
